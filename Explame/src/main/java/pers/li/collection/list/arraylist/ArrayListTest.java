@@ -36,7 +36,8 @@ import java.util.List;
  *      1.ArrayList插入有移位操作，故插入效率低
  *      2.可以按索引读取， 所以读取效率高
  *      3.底层数组-插入有序-可重复-可插入null
- *
+ *      4.jdk1.6 new对象时，初始容量=10 copyof扩容为原来的1.5倍+1,即16
+ *        jdk1.7 new对象时，初始容量=0 ,真正添加时分配容量,copyof扩容为原来的1.5倍
  */
 public class ArrayListTest {
 

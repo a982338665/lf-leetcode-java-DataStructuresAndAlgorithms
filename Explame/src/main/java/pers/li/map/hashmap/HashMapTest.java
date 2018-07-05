@@ -22,9 +22,9 @@ import java.util.concurrent.ConcurrentHashMap;
  *      ·Map map = Collections.synchronizedMap(new HashMap());
  *      ·ConcurrentHashMap<String, String> stringStringConcurrentHashMap = new ConcurrentHashMap<String, String>();
  *      ·HashTable的性能要比以上两种差，以上两种用了分段锁
- *  10.HashMap的容量必须为2的指数倍，最大容量为2^30
+ * 10.HashMap的容量必须为2的指数倍，最大容量为2^30
  * 11.HashMap实际就是一个Entry数组：Entry<K,V> [],单个Entry<K,V>对象有持有链表的下一个对象Entry<K,V>及当前key,value,hash值
- * 12. Entry是单向链表。它是 “HashMap链式存储法”对应的链表。
+ * 12.Entry是单向链表。它是 “HashMap链式存储法”对应的链表。
  * ——————————————————————————————————————————————————————————————————————
  * 源码分析:
  * 1.关键属性：
@@ -77,7 +77,6 @@ import java.util.concurrent.ConcurrentHashMap;
  *  Hash算法本质上就是三步：取key的hashCode值、高位运算、取模运算。
  *  相比于JDK1.8--加入红黑树概念优化：
  *      1.当链表长度大于8时转换为红黑树
- *      2.
  *
  */
 public class HashMapTest
