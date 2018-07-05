@@ -1,4 +1,4 @@
-package pers.li.collection.list.map.hashmap;
+package pers.li.map.hashmap;
 
 import java.util.HashMap;
 import java.util.Iterator;
