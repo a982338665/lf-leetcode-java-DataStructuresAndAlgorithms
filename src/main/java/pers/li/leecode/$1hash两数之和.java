@@ -1,6 +1,5 @@
 package pers.li.leecode;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,7 +14,7 @@ import java.util.Map;
  * <p>
  * 思路：
  */
-public class $1两数之和 {
+public class $1hash两数之和 {
     public int[] twoSum(int[] nums, int target) {
         int[] ss = new int[2];
         for (int x = 0; x < nums.length; x++) {
@@ -58,7 +57,7 @@ public class $1两数之和 {
     }
 
     public static void main(String[] args) {
-        int[] ints = new $1两数之和().twoSum(new int[]{1, 2, 3, 4}, 5);
+        int[] ints = new $1hash两数之和().twoSum(new int[]{1, 2, 3, 4}, 5);
         System.err.println(ints);
     }
 }
