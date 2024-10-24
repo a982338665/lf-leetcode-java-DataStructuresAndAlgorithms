@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lf-leetcode-java-DataStructuresAndAlgorithms" target="1.5" />
+      <module name="lf-leetcode-java-DataStructuresAndAlgorithms" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
