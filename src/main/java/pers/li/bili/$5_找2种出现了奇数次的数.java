@@ -16,7 +16,7 @@ package pers.li.bili;
 public class $5_找2种出现了奇数次的数 {
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 1, 2, 3, 3, 3, 3, 5, 5, 5, 6, 6, 9, 9, 9, 9, 9};
+        int[] arr = {1, 2, 1, 2, 3, 3, 3, 3, 5, 5, 5, 6, 6, 9, 9, 9, 9, 9, 9,8};
         process1(arr);
     }
 
@@ -47,8 +47,8 @@ public class $5_找2种出现了奇数次的数 {
 //            如果(i & rightOne) == 1,则证明取出来的该位置的为1，例如 *******100，由于 是奇数位，所以
 //            如果(i & rightOne) == 0,则将该值^运算,假如他是a则，a^a^a = a,此时onlyOne的值为a
 //            如果(i & rightOne) == 1,则将该值^运算,假如他是b则，b^b^b = b,此时onlyOne的值为b
-//            因为此处任取一边即可，即可以=0或者=1
-            if ((i & rightOne) == 0) {
+//            因为此处任取一边即可，即可以=0或者>0
+            if ((i & rightOne) == rightOne) {
                 onlyOne ^= i;
             }
         }
