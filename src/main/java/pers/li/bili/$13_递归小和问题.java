@@ -25,7 +25,7 @@ package pers.li.bili;
 public class $13_递归小和问题 {
 
     public static void main(String[] args) {
-        int[] arr = {1, 3, 4, 2, 5};
+        int[] arr = {1, 3, 4, 2, 5,4};
         System.out.println(smallSum(arr));
     }
 

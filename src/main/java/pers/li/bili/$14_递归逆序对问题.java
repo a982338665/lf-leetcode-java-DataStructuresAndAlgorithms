@@ -63,7 +63,7 @@ public class $14_递归逆序对问题 {
     }
 
     public static void main(String[] args) {
-        int[] nums = {3, 2, 4, 5, 0};
+        int[] nums = {3, 2, 4, 5, 0, 1, 1, 0};
         $14_递归逆序对问题 solution = new $14_递归逆序对问题();
         int count = solution.reversePairs(nums);
         System.out.println("逆序对总数: " + count);
