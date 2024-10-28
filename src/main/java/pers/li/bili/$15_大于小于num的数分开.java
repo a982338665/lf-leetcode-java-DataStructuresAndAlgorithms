@@ -1,6 +1,8 @@
 package pers.li.bili;
 
 
+import java.util.Arrays;
+
 /**
  * @author : Mr huangye
  * @URL : CSDN 皇夜_
@@ -11,5 +13,30 @@ package pers.li.bili;
  */
 public class $15_大于小于num的数分开 {
 
+    public static void main(String[] args) {
+        int[] arr = {3, 5, 6, 7, 4, 3, 5, 8};
+        process(arr, 5);
+        System.out.println(Arrays.toString(arr));
+    }
 
+
+    public static void process(int[] arr, int num) {
+        int left = 0;
+        int i = 0;
+        while (i <= arr.length - 1) {
+            int curr = arr[i];
+//            当前的和左区间的不相等，并且 当前<=num,[i]和小于等于区的下一个数交换，<=区右扩，i++
+            if (curr <= num) {
+                swap(arr, i, left);
+                left++;
+            }
+            i++;
+        }
+    }
+
+    private static void swap(int[] arr, int i, int i1) {
+        int tmp = arr[i];
+        arr[i] = arr[i1];
+        arr[i1] = tmp;
+    }
 }
